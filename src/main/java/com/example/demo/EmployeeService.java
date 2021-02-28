@@ -50,9 +50,8 @@ public class EmployeeService {
         return query.getResultList();
     }
 
-
     public static void main(String[] args) {
-        EmployeeService demo = new EmployeeService();
-        // Logic
+        EmployeeService service = new EmployeeService();
+        System.out.println(service.createEmployee(0, "Aleksey",30000L));
     }
 }
