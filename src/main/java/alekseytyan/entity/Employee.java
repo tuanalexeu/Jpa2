@@ -1,4 +1,4 @@
-package com.example.demo;
+package alekseytyan.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
