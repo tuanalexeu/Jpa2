@@ -1,10 +1,13 @@
 package alekseytyan.entity;
 
+import javax.ejb.Stateless;
 import javax.persistence.*;
 import java.util.List;
 
+@Stateless
 public class EmployeeService {
 
+    @SuppressWarnings("all")
     @PersistenceContext(unitName = "EmployeeService")
     private static EntityManager entityManager;
 
