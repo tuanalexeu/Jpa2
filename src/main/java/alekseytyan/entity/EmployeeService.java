@@ -5,12 +5,8 @@ import java.util.List;
 
 public class EmployeeService {
 
+    @PersistenceContext(unitName = "EmployeeService")
     private static EntityManager entityManager;
-
-    public EmployeeService() {
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("EmployeeService");
-        entityManager = factory.createEntityManager();
-    }
 
     public Employee createEmployee(int id, String name, long salary) {
         Employee employee = new Employee(id);

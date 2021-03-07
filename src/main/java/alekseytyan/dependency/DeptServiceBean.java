@@ -12,6 +12,7 @@ import javax.naming.NamingException;
 @EJB(name = "audit", beanInterface = AuditService.class)
 public class DeptServiceBean implements DeptService {
 
+    @EJB
     private AuditService audit;
 
     @PostConstruct
